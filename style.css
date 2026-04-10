@@ -1,4 +1,6 @@
-body, p {
-color:black;
-background-color:#a2b9bc;
+body, table {
+    color:cornflowerblue;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: khaki;
 }
