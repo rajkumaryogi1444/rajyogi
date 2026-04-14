@@ -2,7 +2,7 @@ table {
     width: 100%;
         border-collapse: collapse;
 }
-body, th, td {
+th, td {
     border: 3px solid black;
     padding: 5px;
     text-align:center;
@@ -13,4 +13,8 @@ th {
 }
 td {
     background-color:ivory;
+}
+body {
+    text-align:center;
+    font-size:x-large;
 }
