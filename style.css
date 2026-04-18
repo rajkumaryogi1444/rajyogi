@@ -21,9 +21,7 @@ body{
     --HEADER-HOVER-BLUE:#c9996b;
     --Education-PBGCOLOR: #5c5346;
     --POPPING-RED: brown;
-
 }
-/* UTILITY CLASSES */
 .wrap{
     white-space:wrap;
 }
@@ -32,19 +30,16 @@ body{
     display: inline;
 }
 
-/* || NAVIGATION BAR */
 .nav__bar{
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid black;
-    background-color: #5c5346;
 }
 
 .nav__bar ul{
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -68,7 +63,7 @@ body{
 /* WELCOME SECTION */
 
 .section__first{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +74,8 @@ body{
     background-size: cover;
 }
 
-.section__h1{
+.section__h1 
+{
     font-size: 3em;
     color: var(--FONT-COLOR);
 }
@@ -90,10 +86,7 @@ body{
     color: var(--HEADER-RED);
 }
 
-/* || Education SECTION */
-
 .section__Educations{
-    height: 130vh;
     background-color: var(--HEADER-HOVER-BLUE);
 }
 
@@ -155,7 +148,6 @@ body{
 }
 
 .section__technical{
-    height: 130vh;
     background-color: var(--HEADER-HOVER-BLUE);
 }
 
@@ -232,7 +224,6 @@ body{
 }
 
 .section__experience{
-    height: 130vh;
     background-color: var(--HEADER-HOVER-BLUE);
 }
 
@@ -308,10 +299,55 @@ body{
     transition: background 0.5s ease;
 }
 
+-------------------------
+
+.govt__button{
+    padding: 1rem 1.5rem;
+    background-color: var(--Education-PBGCOLOR);
+    color: var(--FONT-COLOR);
+    font: inherit;
+    cursor: pointer;
+}
+
+.govt__button:hover{
+    background: var(--POPPING-RED);
+    transition: background 0.5s ease;
+}
+
+.section__govt{
+    background-color: var(--HEADER-HOVER-BLUE);
+}
+
+.section__govt h2{
+    color: var(--FONT-COLOR);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    padding-top: 3rem;
+}
+
+.govt__div{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    }
+
+.govt__images{
+    width: 700px;
+    display: block;
+}
+.govt__images {
+  border: 3px solid black; /* Required for border-image */
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
 /* CONTACT SECTION */
 
 .section__contact{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -327,12 +363,13 @@ body{
     color: var(--FONT-COLOR);
 }
 .contact__h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .contact__p{
     font-style: italic;
     font-weight: 100;
 }
+
 .contact__links a{
     color: var(--FONT-COLOR);
     padding: 2rem;
