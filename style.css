@@ -15,41 +15,40 @@ body{
 
 :root{
     /* COLORS */
-    --HEADER-RED: $afd5aa;
-    --FONT-COLOR: white;
+    --HEADER-RED: #5c5346;
+    --FONT-COLOR: white;    
     --BODY-GRAY: #5c5346;
-    background: linear-gradient(to left, #7FC8F8, #5AA9E6);
-    --Education-PBGCOLOR: #5c5346;
+    --HEADER-HOVER-BLUE: rgba(130, 166, 168, 0.993);
+    --Education-PBGCOLOR: rgb(82, 59, 28);
     --POPPING-RED: brown;
 }
 .wrap{
     white-space:wrap;
 }
 
-.inline{
-    display: inline;
+.myphoto{
+    display:inline-block;
 }
-
 .nav__bar{
     position: fixed;
-    top: 0;
+    right: 0;
     z-index: 1;
-    width: 100%;
+    width: 50%;
     height: 5vh;    
 }
 
 .nav__bar ul{
-    height: 5vh;
-    display: flex;
+    height: 1em;
+    display:block;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     
 }
 
 .nav__bar li{
     font-weight: 600;
     display: inline;
-    padding: 2em 1em;
+    padding: 1em;
     height: 5vh;
     
 }
@@ -60,34 +59,35 @@ body{
 }
 
 .nav__bar li:hover, .nav__bar li:focus{
-    background-color: black;  
+    background-color: var(--HEADER-HOVER-BLUE)
     /* var(--HEADER-HOVER-BLUE); */
 }
 
 /* WELCOME SECTION */
 
 .section__first{
-    height: 50vh;
-    display: flex;
+    width: 60%;
+    height: 600px;
+    padding-left: 2px;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    background-image: url("Photos/1.png");
+    background-image: url("Photos/7.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-}
+    }
 
 .section__h1 
 {
-    font-size: 2em;
-    color: var(--FONT-COLOR);
+    font-size: 1.3em;
+    font-weight: 900;
+    color: black;
 }
 
 .section__p{
     font-style: italic;
-    font-size: 1.7em;
-    color: var(--HEADER-RED);
+    font-size: .9em;
+    color: black;
 }
 
 .section__Educations{
@@ -358,7 +358,7 @@ body{
 .govt__p{
 font-style: italic;
     font-size: 1em;
-    color: var(--HEADER-RED);
+    color: var(--FONT-COLOR);
 }
 
 
@@ -384,11 +384,6 @@ font-style: italic;
 .contact__h2{
     font-size: 3rem;
 }
-.contact__p{
-    font-style: italic;
-    font-weight: 100;
-}
-
 .contact__links a{
     color: var(--FONT-COLOR);
     padding: 2rem;
