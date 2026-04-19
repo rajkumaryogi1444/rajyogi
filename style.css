@@ -113,14 +113,15 @@ body{
 
 .Education-tile{
     width: 30%;
-    min-width: 10vw;
+    min-width: 300px;
     text-decoration: none;
 }
 
 .Educations__images{
-    width: 100%;
-    height: 10vh;
+   width: 100%;
+    height: 400px;
     display: block;
+
 
 }
 
@@ -354,11 +355,10 @@ body{
   padding: 15px;
   border-image: url(border.png) 30 round;
 }
-#govt{
-    font-style: italic;
-    font-size: larger;
-    font-weight: 600;
-    font-display: white;
+.govt__p{
+font-style: italic;
+    font-size: 1em;
+    color: var(--HEADER-RED);
 }
 
 
