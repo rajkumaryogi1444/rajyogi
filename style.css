@@ -18,7 +18,7 @@ body{
     --HEADER-RED: $afd5aa;
     --FONT-COLOR: white;
     --BODY-GRAY: #5c5346;
-    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    background: linear-gradient(to left, #7FC8F8, #5AA9E6);
     --Education-PBGCOLOR: #5c5346;
     --POPPING-RED: brown;
 }
@@ -350,14 +350,15 @@ body{
   width: 50%; /* Optional: set a width less than 100% */
 }
 .govt__images {
-  border: 3px solid black; /* Required for border-image */
+  border: 3px solid white; /* Required for border-image */
   padding: 15px;
   border-image: url(border.png) 30 round;
 }
-.govt__p{
+#govt{
     font-style: italic;
     font-size: larger;
     font-weight: 600;
+    font-display: white;
 }
 
 
@@ -411,7 +412,7 @@ body{
 }
 
 .footer p{
-    color: var(--FONT-COLOR);
+    color: white;
     padding: 1rem;
 }
 
