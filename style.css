@@ -18,7 +18,7 @@ body{
     --HEADER-RED: $afd5aa;
     --FONT-COLOR: white;
     --BODY-GRAY: #5c5346;
-    --HEADER-HOVER-BLUE:#c9996b;
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
     --Education-PBGCOLOR: #5c5346;
     --POPPING-RED: brown;
 }
@@ -35,35 +35,39 @@ body{
     top: 0;
     z-index: 1;
     width: 100%;
-    height: 8%;
+    height: 5vh;    
 }
 
 .nav__bar ul{
-    height: 60px;
+    height: 5vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: left;
+    
 }
 
 .nav__bar li{
+    font-weight: 600;
     display: inline;
-    padding: 1em 1em;
-    height: 80px;
+    padding: 2em 1em;
+    height: 5vh;
+    
 }
 
 .nav__links{
     text-decoration: none;
-    color: var(--FONT-COLOR);
+    color: black;
 }
 
 .nav__bar li:hover, .nav__bar li:focus{
-    background-color: var(--HEADER-HOVER-BLUE);
+    background-color: black;  
+    /* var(--HEADER-HOVER-BLUE); */
 }
 
 /* WELCOME SECTION */
 
 .section__first{
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +80,7 @@ body{
 
 .section__h1 
 {
-    font-size: 3em;
+    font-size: 2em;
     color: var(--FONT-COLOR);
 }
 
@@ -109,13 +113,13 @@ body{
 
 .Education-tile{
     width: 30%;
-    min-width: 300px;
+    min-width: 10vw;
     text-decoration: none;
 }
 
 .Educations__images{
     width: 100%;
-    height: 400px;
+    height: 10vh;
     display: block;
 
 }
@@ -316,6 +320,8 @@ body{
 
 .section__govt{
     background-color: var(--HEADER-HOVER-BLUE);
+    text-align: center;
+    text-decoration: underline;
 }
 
 .section__govt h2{
@@ -336,14 +342,26 @@ body{
     }
 
 .govt__images{
-    width: 700px;
-    display: block;
+    width: 40%;
+    display: block;      
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Optional: set a width less than 100% */
 }
 .govt__images {
   border: 3px solid black; /* Required for border-image */
   padding: 15px;
   border-image: url(border.png) 30 round;
 }
+.govt__p{
+    font-style: italic;
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+
 
 /* CONTACT SECTION */
 
