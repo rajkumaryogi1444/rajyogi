@@ -41,9 +41,9 @@ body{
 .nav-container a {
   color: white;
   text-decoration: none;
-  padding: 0 35px;
+  padding: 0 2px;
   font-family: sans-serif;
-  transform: scale(0.9);
+  transform: scale(1    );
   transform-origin: top;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;  
 }
