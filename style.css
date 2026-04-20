@@ -43,46 +43,17 @@ body{
   text-decoration: none;
   padding: 0 35px;
   font-family: sans-serif;
-  transition: color 0.3s ease;
+  transform: scale(0.9);
+  transform-origin: top;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;  
 }
 
 .nav-container a:hover {
-  color: var(--HEADER-HOVER-BLUE);
+  color: black;
+  background-color: aliceblue;
+  visibility: visible;
 }
 
-
-/* .nav_bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  background-color: var(--HEADER-HOVER-BLUE)
-
-  }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-left: 0.5px;
-}
-
-.nav-links a {
-  text-transform: capitalize;
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-.nav__bar li:hover, .nav__bar li:focus{
-    background-color: var(--HEADER-HOVER-BLUE)
-    } */
 
 /* WELCOME SECTION */
 
