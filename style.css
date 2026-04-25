@@ -168,12 +168,11 @@ border-radius: 1em;
     left: 20px;
 
 }
-
-
 .div__button{
     text-align: center;
     margin-top: 3rem;
 }
+-------------------------
 
 .experience__button{
     padding: 1rem 1.5rem;
@@ -182,16 +181,13 @@ border-radius: 1em;
     font: inherit;
     cursor: pointer;
 }
-
 .experience__button:hover{
     background: var(--POPPING-RED);
     transition: background 0.5s ease;
 }
-
 .section__experience{
     background-color: var(--HEADER-HOVER-BLUE);
 }
-
 .section__experience h2{
     color: var(--FONT-COLOR);
     text-align: center;
@@ -199,7 +195,6 @@ border-radius: 1em;
     font-size: 2em;
     padding-top: 3rem;
 }
-
 .experience__div{
     margin-top: 2rem;
     display: flex;
@@ -208,7 +203,6 @@ border-radius: 1em;
     gap: 2rem;
     justify-content: center;
 }
-
 .experience__p{
     background-color: var(--Education-PBGCOLOR);
     color: var(--FONT-COLOR);
@@ -216,28 +210,22 @@ border-radius: 1em;
     padding: 1rem;
     position: relative;
 }
-
 .experience__p:hover::after{
     content: '/>';
     color: orange;
     position: absolute;
     right: 20px;
 }
-
 .experience__p:hover::before{
     content: '<';
     color: orange;
     position: absolute;
     left: 20px;
-
 }
-
-
 .div__button{
     text-align: center;
     margin-top: 3rem;
 }
-
 .experience__button{
     padding: 1rem 1.5rem;
     background-color: var(--Education-PBGCOLOR);
@@ -245,7 +233,6 @@ border-radius: 1em;
     font: inherit;
     cursor: pointer;
 }
-
 .experience__button:hover{
     background: var(--POPPING-RED);
     transition: background 0.5s ease;
@@ -260,18 +247,13 @@ border-radius: 1em;
     font: inherit;
     cursor: pointer;
 }
-
 .govt__button:hover{
     background: var(--POPPING-RED);
     transition: background 0.5s ease;
 }
-
 .section__govt{
     background-color: var(--HEADER-HOVER-BLUE);
-    text-align: center;
-    text-decoration: underline;
 }
-
 .section__govt h2{
     color: var(--FONT-COLOR);
     text-align: center;
@@ -279,40 +261,39 @@ border-radius: 1em;
     font-size: 2em;
     padding-top: 3rem;
 }
-
-.govt__div{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    }
-
-.govt__images{
-    width: 40%;
-    display: block;      
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; /* Optional: set a width less than 100% */
+.govt1__p:hover::after{
+    content: '/>';
+    color: orange;
+    position: absolute;
+    right: 20px;
+}
+.govt1__p:hover::before{
+    content: '<';
+    color: orange;
+    position: absolute;
+    left: 20px;
+}
+.div__button{
+    text-align: center;
+    margin-top: 3rem;
+}
+.govt__button {
+    padding: 1rem 1.5rem;
+    background-color: var(--Education-PBGCOLOR);
+    color: var(--FONT-COLOR);
+    font: inherit;
+    cursor: pointer;
 }
 .govt__images {
-  border: 3px solid white; /* Required for border-image */
-  padding: 15px;
-  border-image: url(border.png) 30 round;
+    width: 30em;
+    height: 50%;
+    bor
 }
-.govt__p{
-font-style: italic;
-    font-size: 1em;
-    color: var(--FONT-COLOR);
+.govt__button:hover{
+    background: var(--POPPING-RED);
+    transition: background 0.5s ease;
 }
-
-
-
-
 /* CONTACT SECTION */
-
 .section__contact{
     display: flex;
     flex-direction: column;
