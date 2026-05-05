@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Lala Ji | Hotel & Restaurant</title>
+    <meta name="description" content="Hotel Lala Ji offers comfortable AC rooms, delicious Indian cuisine, party halls, and signature Kulhad Chai & Coffee.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Hotel <span>Lala Ji</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="btn-nav">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Where Comfort Meets Flavor</h1>
+            <p>Experience cozy AC rooms, authentic Indian cuisine, and unforgettable moments at Family Inn.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-outline">Reserve Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-image checkered-bg">
+                <img src="1.jpg" alt="Interior with checkered wall design">
+            </div>
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Family Inn blends modern industrial aesthetics with warm hospitality. From our signature bicycle-shaped Edison light fixtures to our striking black & white checkered walls and lush green accents, every corner is designed to make you feel at home.</p>
+                <ul class="features">
+                    <li><i class="fas fa-utensils"></i> Fast Food, Breakfast, Lunch & Dinner</li>
+                    <li><i class="fas fa-building"></i> Private Party Hall</li>
+                    <li><i class="fas fa-snowflake"></i> Comfortable AC Rooms</li>
+                    <li><i class="fas fa-mug-hot"></i> Signature Kulhad Chai & Coffee</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Authentic flavors crafted with love</p>
+            </div>
+            
+            <div class="menu-filters">	
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="paneer">Paneer</button>
+                <button class="filter-btn" data-filter="vegetable">Vegetable</button>
+                <button class="filter-btn" data-filter="chap">Chap Special</button>
+                <button class="filter-btn" data-filter="rice-biryani">Rice & Biryani</button>
+                <button class="filter-btn" data-filter="thali">Thali & Specials</button>
+            </div>
+
+				<div class="menu-grid" id="menu-grid">
+					<!-- Paneer -->
+					<div class="menu-item" data-category="paneer">
+						<h3>Matar Paneer</h3><span class="price">₹90 / ₹150</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Shami Paneer</h3><span class="price">150 / ₹250</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Kadhai Paneer</h3><span class="price">₹110 / ₹190</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Butter Masala</h3><span class="price">₹110 / ₹180</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Tufani</h3><span class="price">₹100 / ₹170</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Lawabdar</h3><span class="price">₹120 / ₹200</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Tikka Masala</h3><span class="price">₹120 / ₹200</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Bhurji</h3><span class="price">₹120 / ₹200</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Paneer Patiyala</h3><span class="price">₹120 / ₹210</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Palak Paneer</h3><span class="price">₹110 / ₹150</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Kaju Kari</h3><span class="price">₹160 / ₹280</span>
+					</div>
+					<div class="menu-item" data-category="paneer">
+						<h3>Kaju Butter Masala</h3><span class="price">₹170 / ₹300</span>
+					</div>
+
+                <!-- Vegetable -->
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Chana Masala</h3><span class="price">100 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Mix Veg</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Makhan Wala</h3><span class="price">₹110 / ₹130</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Kadhai</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Keema</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Kofta</h3><span class="price">₹120 / ₹190</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Kari Pakoda</h3><span class="price">₹110 / ₹180</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Jaipuri</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Dum Aaloo</h3><span class="price">₹90 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Bhindi Masala</h3><span class="price">₹90 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Sev Bhaji</h3><span class="price">₹80 / ₹120</span>
+                </div>
+
+                <!-- Chap Special -->
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Malai Chap</h3><span class="price">₹170 (Full)</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Masala Chap</h3><span class="price">₹90 / ₹160</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Palak Chap</h3><span class="price">₹90 / ₹160</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Afghani Chap</h3><span class="price">₹180 (Full)</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Kali Mirch Chap</h3><span class="price">100 / ₹170</span>
+                </div>
+
+                <!-- Rice & Biryani -->
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Plain Rice</h3><span class="price">₹80</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Jeera Rice</h3><span class="price">₹90</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Veg Pulao</h3><span class="price">₹120</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Veg Shahi Biryani</h3><span class="price">₹160 / ₹260</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Paneer Biryani</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Hyderabadi Biryani</h3><span class="price">₹110 / ₹190</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Paneer Dum Biryani</h3><span class="price">₹160 / ₹210</span>
+                </div>
+
+                <!-- Thali & Specials -->
+                <div class="menu-item special-card" data-category="thali">
+                    <h3>Executive Thali</h3>
+                    <p class="desc">Shahi Paneer + Mix Veg + Dal Makhani + Butter Naan + Lachha Paratha + Papad + Rice + Sweet Ice Cream</p>
+                    <span class="price">₹300</span>
+                </div>
+                <div class="menu-item special-card" data-category="thali">
+                    <h3>Deluxe Thali</h3>
+                    <p class="desc">Dal Tadka + Paneer Butter Masala + Veg + 4 Roti + Rice</p>
+                    <span class="price">₹199</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Bundi Rayta</h3><span class="price">₹60</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Vegetable Mix Rayta</h3><span class="price">₹70</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Jeera Tadka Rayta</h3><span class="price">₹80</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Pineapple Rayta</h3><span class="price">₹100</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Green Salad</h3><span class="price">₹60</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Kachumber Salad</h3><span class="price">₹50</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Sirka Payaj</h3><span class="price">₹60</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>AC Rooms</h2>
+                <p>Rest well, wake refreshed</p>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-img"></div>
+                    <div class="room-info">
+                        <h3>Standard AC Room</h3>
+                        <ul>
+                            <li>
+<i class="fas fa-check"></i> King/Double Bed</li>
+                            <li><i class="fas fa-check"></i> Attached Bathroom</li>
+                            <li><i class="fas fa-check"></i> Free Wi-Fi</li>
+                            <li><i class="fas fa-check"></i> Room Service</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">Book Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-img"></div>
+                    <div class="room-info">
+                        <h3>Deluxe AC Room</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium Bedding</li>
+                            <li><i class="fas fa-check"></i> Smart TV</li>
+                            <li><i class="fas fa-check"></i> Mini Fridge</li>
+                            <li><i class="fas fa-check"></i> Complimentary Breakfast</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-small">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>A glimpse into our space</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="2.jpg" alt="Paneer Tikka"></div>
+                <div class="gallery-item"><img src="3.jpg" alt="Green accent wall dining"></div>
+                <div class="gallery-item"><img src="8.jpg" alt="Family Inn Exterior"></div>
+                <div class="gallery-item"><img src="9.jpg" alt="Bicycle light fixture"></div>
+                <div class="gallery-item"><img src="10.jpg" alt="Checkered wall interior"></div>
+                <div class="gallery-item"><img src="7.jpg" alt="Table setting with menu"></div>
+            </div>
+        </div>
+    </section>
+	
+	
+	    <section id="selfphoto" class="selfphoto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Personalised Touch</h2>
+                <p>As we are</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="1.jpg" alt="Paneer Tikka"></div>
+                <div class="gallery-item"><img src="4.jpg" alt="Green accent wall dining"></div>
+                <div class="gallery-item"><img src="5.jpg" alt="Family Inn Exterior"></div>
+                <div class="gallery-item"><img src="6.jpg" alt="Bicycle light fixture"></div>
+                <div class="gallery-item"><img src="11.jpg" alt="Checkered wall interior"></div>
+                </div>
+        </div>
+    </section>
+	
+	
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Visit Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i>Near Railway Crossing, near Railway Station, Gogamedi, Rajasthan 335504</p>
+                <p><i class="fas fa-phone"></i>7042031469, 9311581538</p>
+                <p><i class="fas fa-envelope"></i> contact@hotellalaji.com</p>
+                <p><i class="fas fa-clock"></i> Open Daily: 7:00 AM - 11:00 PM</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="booking-form">
+                <h3>Reservation / Inquiry</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option value="dining">Dining Reservation</option>
+                    <option value="room">AC Room Booking</option>
+                    <option value="party">Party Hall Inquiry</option>
+                </select>
+                <input type="date" required>
+                <textarea placeholder="Special Requests (optional)"></textarea>
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+            </form>
+        </div>
+    </section>
+<a href="tel:7042031469" style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#C9A961;
+color:#000;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:999;
+">📞 Call Now</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span>Hotel Lalal Ji. All rights reserved.</p>
+            <p class="credit">Designed with <i class="fas fa-heart"></i> for unforgettable experiences.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
