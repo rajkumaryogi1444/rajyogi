@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Heaven — Comfortable Stay, feels like home</title>
+  <meta name="description" content="Hotel Heaven — Comfortable Stay, feels like home." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVIGATION ════════════════════════════ -->
+  <nav class="nav" id="top">
+    <div class="nav-brand">
+      <div class="nav-name">Hotel Heaven</div>
+      <div class="nav-sub">Comfortable Stay, feels like home</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#dining">Dining</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Enquire</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">&#10005;</button>
+    <ul>
+      <li><a href="#rooms" class="mobile-link">Rooms</a></li>
+      <li><a href="#dining" class="mobile-link">Dining</a></li>
+      <li><a href="#amenities" class="mobile-link">Amenities</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ══ HERO ══════════════════════════════════ -->
+  <section class="hero">
+    <img
+      src="1.jpg"
+      alt="Hotel Heaven Front"
+      class="hero-img"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">— Browse by feeling —</p>
+      <h1 class="hero-title">Not just a room.<br /><em>A state of mind.</em></h1>
+      <p class="hero-sub">Filter rooms by mood, not square footage.<br />Find the one that fits how you want to feel.</p>
+      <div class="hero-pills">
+        <button class="hero-pill" data-mood="Cozy &amp; Warm">Cozy &amp; Warm</button>
+        <button class="hero-pill" data-mood="Minimal &amp; Serene">Minimal &amp; Serene</button>
+        <button class="hero-pill" data-mood="Earthy &amp; Bold">Earthy &amp; Bold</button>
+        <button class="hero-pill" data-mood="Fresh &amp; Airy">Fresh &amp; Airy</button>
+        <button class="hero-pill" data-mood="Dramatic &amp; Moody">Dramatic &amp; Moody</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ROOMS ══════════════════════════════════ -->
+  <section class="section" id="rooms">
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">Our Rooms</p>
+        <h2 class="section-title">Find Your Space</h2>
+      </div>
+      <div class="filter-tabs" id="moodFilters">
+        <button class="filter-tab active" data-filter="All Moods">All Moods</button>
+        <button class="filter-tab" data-filter="Cozy &amp; Warm">Cozy &amp; Warm</button>
+        <button class="filter-tab" data-filter="Minimal &amp; Serene">Minimal &amp; Serene</button>
+        <button class="filter-tab" data-filter="Earthy &amp; Bold">Earthy &amp; Bold</button>
+        <button class="filter-tab" data-filter="Fresh &amp; Airy">Fresh &amp; Airy</button>
+        <button class="filter-tab" data-filter="Dramatic &amp; Moody">Dramatic &amp; Moody</button>
+        <button class="filter-tab" data-filter="Light &amp; Playful">Light &amp; Playful</button>
+      </div>
+    </div>
+
+    <div class="rooms-grid" id="roomsGrid">
+      
+    </div>
+  </section>
+
+      <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Authentic flavors crafted with love</p>
+            </div>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="paneer">Paneer</button>
+                <button class="filter-btn" data-filter="vegetable">Vegetable</button>
+                <button class="filter-btn" data-filter="chap">Chap Special</button>
+                <button class="filter-btn" data-filter="rice-biryani">Rice & Biryani</button>
+                <button class="filter-btn" data-filter="thali">Thali & Specials</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <!-- Paneer -->
+                <div class="menu-item" data-category="paneer">
+                    <h3>Matar Paneer</h3><span class="price">₹90 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Shami Paneer</h3><span class="price">150 / ₹250</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Kadhai Paneer</h3><span class="price">₹110 / ₹190</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Butter Masala</h3><span class="price">₹110 / ₹180</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Tufani</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Lawabdar</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Tikka Masala</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Bhurji</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Paneer Patiyala</h3><span class="price">₹120 / ₹210</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Palak Paneer</h3><span class="price">₹110 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Kaju Kari</h3><span class="price">₹160 / ₹280</span>
+                </div>
+                <div class="menu-item" data-category="paneer">
+                    <h3>Kaju Butter Masala</h3><span class="price">₹170 / ₹300</span>
+                </div>
+
+                <!-- Vegetable -->
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Chana Masala</h3><span class="price">100 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Mix Veg</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Makhan Wala</h3><span class="price">₹110 / ₹130</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Kadhai</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Keema</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Kofta</h3><span class="price">₹120 / ₹190</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Kari Pakoda</h3><span class="price">₹110 / ₹180</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Veg Jaipuri</h3><span class="price">₹100 / ₹170</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Dum Aaloo</h3><span class="price">₹90 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Bhindi Masala</h3><span class="price">₹90 / ₹150</span>
+                </div>
+                <div class="menu-item" data-category="vegetable">
+                    <h3>Sev Bhaji</h3><span class="price">₹80 / ₹120</span>
+                </div>
+
+                <!-- Chap Special -->
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Malai Chap</h3><span class="price">₹170 (Full)</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Masala Chap</h3><span class="price">₹90 / ₹160</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Palak Chap</h3><span class="price">₹90 / ₹160</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Afghani Chap</h3><span class="price">₹180 (Full)</span>
+                </div>
+                <div class="menu-item" data-category="chap">
+                    <h3>Soya Kali Mirch Chap</h3><span class="price">100 / ₹170</span>
+                </div>
+
+                <!-- Rice & Biryani -->
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Plain Rice</h3><span class="price">₹80</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Jeera Rice</h3><span class="price">₹90</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Veg Pulao</h3><span class="price">₹120</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Veg Shahi Biryani</h3><span class="price">₹160 / ₹260</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Paneer Biryani</h3><span class="price">₹120 / ₹200</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Hyderabadi Biryani</h3><span class="price">₹110 / ₹190</span>
+                </div>
+                <div class="menu-item" data-category="rice-biryani">
+                    <h3>Paneer Dum Biryani</h3><span class="price">₹160 / ₹210</span>
+                </div>
+
+                <!-- Thali & Specials -->
+                <div class="menu-item special-card" data-category="thali">
+                    <h3>Executive Thali</h3>
+                    <p class="desc">Shahi Paneer + Mix Veg + Dal Makhani + Butter Naan + Lachha Paratha + Papad + Rice + Sweet Ice Cream</p>
+                    <span class="price">₹300</span>
+                </div>
+                <div class="menu-item special-card" data-category="thali">
+                    <h3>Deluxe Thali</h3>
+                    <p class="desc">Dal Tadka + Paneer Butter Masala + Veg + 4 Roti + Rice</p>
+                    <span class="price">₹199</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Bundi Rayta</h3><span class="price">₹60</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Vegetable Mix Rayta</h3><span class="price">₹70</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Jeera Tadka Rayta</h3><span class="price">₹80</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Pineapple Rayta</h3><span class="price">₹100</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Green Salad</h3><span class="price">₹60</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Kachumber Salad</h3><span class="price">₹50</span>
+                </div>
+                <div class="menu-item" data-category="thali">
+                    <h3>Sirka Payaj</h3><span class="price">₹60</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- ══ CONTACT ══════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-info">
+      <div>
+        <p class="section-eyebrow">Find Us</p>
+        <h2 class="section-title">Hotel Heaven</h2>
+        <p class="contact-about">Comfortable Stay, feels like home.</p>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div>
+          <div class="contact-label">Address</div>
+          <div class="contact-value">S-3 complex, Basant vihar, Anand Vihar Colony, Suratgarh, Rajasthan 335804</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+91 9829864040</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">hello@hotelheaven@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🌐</span>
+        <div>
+          <div class="contact-label">GPS Coordinates</div>
+          <div class="contact-value">29°19'49.8"N 73°54'06.3"E</div>
+        </div>
+      </div>
+      <a href="https://maps.app.goo.gl/G5Jt2TgU7wfibPt38" target="_blank" rel="noreferrer" class="maps-link">
+        Open in Google Maps →
+      </a>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3478.3634325935586!2d73.89918957599596!3d29.330342975290925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x391673005ac4a0ef%3A0x1a71557b99d23133!2sHOTEL%20HEAVEN%2C%20S-3%20complex%2C%20Basant%20vihar%2C%20Anand%20Vihar%20Colony%2C%20Suratgarh%2C%20Rajasthan%20335804!3m2!1d29.330359299999998!2d73.9017722!5e0!3m2!1sen!2sin!4v1778059326534!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen
+      </iframe>
+    </div>
+
+    <form class="enquiry-form" id="enquiryForm">
+      <div>
+        <p class="section-eyebrow">Get in Touch</p>
+        <h3 class="form-title">Send an Enquiry</h3>
+      </div>
+      <div class="form-success" id="formSuccess" style="display:none;">
+        ✓ Thank you! We'll get back to you within 24 hours.
+      </div>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" class="form-input" required />
+        <input type="email" name="email" placeholder="Email address" class="form-input" required />
+      </div>
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp" class="form-input" />
+        <input type="text" name="dates" placeholder="Preferred dates" class="form-input" />
+      </div>
+      <select name="guests" class="form-select">
+        <option value="1">1 guest</option>
+        <option value="2">2 guests</option>
+        <option value="3">3 guests</option>
+        <option value="4">4 guests</option>
+        <option value="5+">5+ guests</option>
+      </select>
+      <textarea name="message" class="form-textarea" placeholder="Tell us about your stay — room preference, special occasion, dietary needs..."></textarea>
+      <button type="submit" class="form-btn">Send Enquiry →</button>
+    </form>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════ -->
+  <footer class="footer">
+    <div>
+      <div class="footer-brand">Hotel Heaven</div>
+      <div class="footer-sub">Comfortable Stay</div>
+    </div>
+    <div class="footer-copy">&copy; <span id="year"></span> Hotel Heaven. All rights reserved.</div>
+  </footer>
+
+  <!-- ══ ROOM MODAL ════════════════════════════ -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal">
+      <img src="" alt="" class="modal-img" id="modalImg" />
+      <div class="modal-body">
+        <div class="modal-vibe" id="modalVibe"></div>
+        <h2 class="modal-name" id="modalName"></h2>
+        <div class="modal-mood" id="modalMood"></div>
+        <div class="modal-price" id="modalPrice"></div>
+        <div class="modal-features" id="modalFeatures"></div>
+        <div class="modal-actions">
+          <button class="modal-book-btn" id="modalEnquireBtn">Enquire About This Room</button>
+          <button class="modal-close-btn" id="modalCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TOAST ════════════════════════════════ -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
